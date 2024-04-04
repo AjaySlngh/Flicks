@@ -6,22 +6,21 @@ import Socials from './Socials';
 const FrontPage = () => {
     return (
         <div>
-            <Tut />
-            <div>
-                <h2>My Work</h2>
+            <section> 
+                <h2 style={{ textAlign: 'center' }}>My Work</h2>
                 <p>Here you can see some of my favorite shots.</p>
-                {PhotoDisplayer()}
-            </div>
-            <div>
-                <h2>About Me</h2>
+                <PhotoDisplayer />
+            </section>
+            <section>
+                <h2 style={{ textAlign: 'center' }}>About Me</h2>
                 <p>I am a photographer based in Rochester, NY</p>
-                {AboutMe()}
-            </div>
-            <div>
-                <h2>Contact</h2>
+                <AboutMe />
+            </section>
+            <section>
+                <h2 style={{ textAlign: 'center' }}>Contact</h2>
                 <p>Want to get in touch? Reach out on my social channels or send me an email.</p>
-                {Socials()}
-            </div>
+                <Socials />
+            </section>
         </div>
     );
 }
