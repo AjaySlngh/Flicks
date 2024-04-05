@@ -2,6 +2,7 @@ import React from 'react';
 import PhotoDisplayer from './PhotoDisplayer';
 import AboutMe from './AboutMe';
 import Socials from './Socials';
+import './FrontPage.css';
 
 const FrontPage = () => {
     return (
