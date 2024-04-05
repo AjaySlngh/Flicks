@@ -18,7 +18,7 @@ class PhotoDisplayer extends React.Component {
         return (
             <div>
                 {this.state.photos.map((photo, index) => (
-                    <img key={index} src={photo} alt="Front page" />
+                    <img class="photo" key={index} src={photo} alt="Front page" />
                 ))}
             </div>
         );
