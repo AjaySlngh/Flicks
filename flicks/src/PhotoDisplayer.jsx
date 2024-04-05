@@ -5,10 +5,10 @@ class PhotoDisplayer extends React.Component {
         super(props);
         this.state = {
             photos: [
-                'Flicks\flicks\src\data\_DSF3444.jpg',
-                'Flicks\flicks\src\data\_DSF3497.jpg',
-                'Flicks\flicks\src\data\_DSF3503.jpg',
-                'Flicks\flicks\src\data\_DSF2579.jpg',
+            'https://csh.rit.edu/~jays/sample1.jpg',
+            'https://csh.rit.edu/~jays/sample2.jpg',
+            'https://csh.rit.edu/~jays/sample3.jpg',
+            'https://csh.rit.edu/~jays/sample4.jpg',
             ],
         };
     }
