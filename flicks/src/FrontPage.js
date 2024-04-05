@@ -3,8 +3,28 @@ import PhotoDisplayer from './PhotoDisplayer';
 import AboutMe from './AboutMe';
 import Socials from './Socials';
 import './FrontPage.css';
+import { useEffect } from 'react';
 
 const FrontPage = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+            const frontPageContainer = document.getElementById('frontPageContainer');
+            if (frontPageContainer) {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > 0) {
+                    frontPageContainer.classList.add('neutral-background');
+                } else {
+                    frontPageContainer.classList.remove('neutral-background');
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <div>
             <section> 
