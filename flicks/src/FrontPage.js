@@ -17,7 +17,7 @@ const FrontPage = () => {
             <div className="content-container">
 
                 <div className="photo-displayer-container">
-                    <PhotoDisplayer />
+                    <center><PhotoDisplayer /></center>
                 </div>
 
                 <section>
