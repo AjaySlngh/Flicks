@@ -79,7 +79,7 @@ const PhotoDisplayer = () => {
             ))}
 
             {/* Render the ImageViewerComponent with selectedImage state */}
-            {selectedImage && <ImageViewerComponent images={[selectedImage]} />}
+            {selectedImage && <ImageViewerComponent images={[selectedImage]} selectedIndex={0} />}
         </div>
     );
 };

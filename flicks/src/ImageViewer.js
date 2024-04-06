@@ -28,8 +28,7 @@ const ImageViewerComponent = ({ images }) => {
                     className="image-viewer-image" // Apply custom CSS class
                 />
             ))}
-        </div>
-    );
+        </div> );
 };
 
 export default ImageViewerComponent;
