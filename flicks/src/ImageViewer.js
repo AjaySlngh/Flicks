@@ -8,7 +8,6 @@ const ImageViewerComponent = ({ images }) => {
                 images: images,
             });
 
-            // Ensure that imageViewer.destroy() is a valid function before calling it
             if (typeof imageViewer.destroy === 'function') {
                 // Cleanup function to destroy the ImageViewer when component unmounts
                 return () => {
@@ -18,7 +17,19 @@ const ImageViewerComponent = ({ images }) => {
         }
     }, [images]);
 
-    return <div id="image-viewer-container"></div>; // Placeholder for ImageViewer
+    return (
+        <div id="image-viewer-container">
+            {/* Render images inside the viewer */}
+            {images.map((image, index) => (
+                <img
+                    key={index}
+                    src={image.mainUrl}
+                    alt={image.description || `Image ${index + 1}`}
+                    className="image-viewer-image" // Apply custom CSS class
+                />
+            ))}
+        </div>
+    );
 };
 
 export default ImageViewerComponent;

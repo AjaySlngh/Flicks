@@ -11,7 +11,7 @@ const FrontPage = () => {
         <div>
             <FrontBackground />
             <div className="background-overlay">
-                <h1>Welcome To Flicks</h1>
+                <h1>My Portfolio:</h1>
             </div>
 
             <div className="content-container">
